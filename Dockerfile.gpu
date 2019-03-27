@@ -48,7 +48,10 @@ RUN pip3 --no-cache-dir install \
     py3nvml
 
 # Install tensorflow
-RUN pip3 --no-cache-dir install tensorflow-gpu==1.8.0
+RUN pip3 --no-cache-dir install tensorflow-gpu==1.13.1
+RUN pip3 install jupyter matplotlib
+RUN pip3 install jupyter_http_over_ws
+RUN jupyter serverextension enable --py jupyter_http_over_ws
 
 # Set the library path to use cuda and cupti
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda/lib64:$LD_LIBRARY_PATH

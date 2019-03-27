@@ -1,5 +1,5 @@
 # Dockerfile with tensorflow gpu support on python3, opencv3.3
-FROM tensorflow/tensorflow:1.8.0-py3
+FROM tensorflow/tensorflow:1.13.1-py3
 MAINTAINER Fergal Cotter <fbc23@cam.ac.uk>
 
 # The code below is all based off the repos made by https://github.com/janza/
