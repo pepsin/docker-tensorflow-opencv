@@ -34,7 +34,8 @@ RUN pip3 --no-cache-dir install \
     hdf5storage \
     h5py \
     scipy \
-    py3nvml
+    py3nvml \
+    keras
 
 WORKDIR /
 ENV OPENCV_VERSION="3.4.1"
